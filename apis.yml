@@ -9,11 +9,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Service Mesh
-  - Kubernetes
   - Google Cloud
   - Istio
+  - Kubernetes
   - Microservices
+  - Service Mesh
 url: >-
   https://raw.githubusercontent.com/api-evangelist/google-cloud-service-mesh/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -33,9 +33,9 @@ apis:
     baseURL: https://networkservices.googleapis.com/
     tags:
       - Networking
+      - REST
       - Service Mesh
       - Traffic Management
-      - REST
     properties:
       - type: Documentation
         url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
@@ -54,9 +54,9 @@ apis:
     humanURL: https://cloud.google.com/service-mesh/docs/reference/network-security/rest
     baseURL: https://networksecurity.googleapis.com/
     tags:
-      - Security
-      - mTLS
       - Authorization
+      - mTLS
+      - Security
       - Service Mesh
     properties:
       - type: Documentation
@@ -78,10 +78,10 @@ apis:
     humanURL: https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis
     baseURL: https://trafficdirector.googleapis.com/
     tags:
-      - xDS
-      - Envoy
       - Control Plane
+      - Envoy
       - Service Mesh
+      - xDS
     properties:
       - type: Documentation
         url: https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis
