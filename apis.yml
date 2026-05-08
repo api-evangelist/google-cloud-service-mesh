@@ -37,6 +37,8 @@ apis:
       - Service Mesh
       - Traffic Management
     properties:
+      - url: openapi/google-cloud-service-mesh-openapi.yml
+        type: OpenAPI
       - type: Documentation
         url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
       - type: Reference
