@@ -104,6 +104,10 @@ common:
     url: https://cloud.google.com/service-mesh/docs/getting-support
   - type: Security
     url: https://cloud.google.com/service-mesh/docs/security-bulletins
+  - type: Integrations
+    url: https://cloud.google.com/marketplace
+integrations:
+  - name: Become a Partner
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
