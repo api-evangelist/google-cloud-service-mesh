@@ -92,13 +92,13 @@ common:
     url: https://cloud.google.com/service-mesh
   - type: Documentation
     url: https://cloud.google.com/service-mesh/docs
-  - type: Getting Started
+  - type: GettingStarted
     url: https://cloud.google.com/service-mesh/docs/onboarding/provision-control-plane
   - type: Reference
     url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   - type: Pricing
     url: https://cloud.google.com/service-mesh/pricing
-  - type: Change Log
+  - type: ChangeLog
     url: https://cloud.google.com/service-mesh/docs/release-notes
   - type: Support
     url: https://cloud.google.com/service-mesh/docs/getting-support
