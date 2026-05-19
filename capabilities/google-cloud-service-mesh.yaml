@@ -1,0 +1,985 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Google Cloud Network Services API (Service Mesh)
+  description: 'Google Cloud Network Services API (Service Mesh). 22 operations. Lead operation: Get a resource by name. Self-contained
+    Naftiko capability covering one Google Cloud Service Mesh business surface.'
+  tags:
+  - Google Cloud Service Mesh
+  - Google Cloud Network Services API (Service Mesh)
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    GOOGLE_CLOUD_SERVICE_MESH_API_KEY: GOOGLE_CLOUD_SERVICE_MESH_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: google-cloud-service-mesh
+    baseUri: https://networkservices.googleapis.com
+    description: Google Cloud Network Services API (Service Mesh) business capability. Self-contained, no shared references.
+    resources:
+    - name: v1-name
+      path: /v1/{name}
+      operations:
+      - name: getresource
+        method: GET
+        description: Get a resource by name
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+      - name: deleteresource
+        method: DELETE
+        description: Delete a resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+      - name: updateresource
+        method: PATCH
+        description: Update a resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+        - name: updateMask
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-name}:cancel
+      path: /v1/{name}:cancel
+      operations:
+      - name: canceloperation
+        method: POST
+        description: Cancel a long-running operation
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-endpointPolicies
+      path: /v1/{parent}/endpointPolicies
+      operations:
+      - name: listendpointpolicies
+        method: GET
+        description: List endpoint policies
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createendpointpolicy
+        method: POST
+        description: Create an endpoint policy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: endpointPolicyId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-gateways
+      path: /v1/{parent}/gateways
+      operations:
+      - name: listgateways
+        method: GET
+        description: List gateways
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: creategateway
+        method: POST
+        description: Create a gateway
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: gatewayId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-grpcRoutes
+      path: /v1/{parent}/grpcRoutes
+      operations:
+      - name: listgrpcroutes
+        method: GET
+        description: List gRPC routes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: creategrpcroute
+        method: POST
+        description: Create a gRPC route
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: grpcRouteId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-httpRoutes
+      path: /v1/{parent}/httpRoutes
+      operations:
+      - name: listhttproutes
+        method: GET
+        description: List HTTP routes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createhttproute
+        method: POST
+        description: Create an HTTP route
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: httpRouteId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-locations
+      path: /v1/{parent}/locations
+      operations:
+      - name: listlocations
+        method: GET
+        description: List supported locations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-meshes
+      path: /v1/{parent}/meshes
+      operations:
+      - name: listmeshes
+        method: GET
+        description: List meshes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createmesh
+        method: POST
+        description: Create a mesh
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: meshId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-operations
+      path: /v1/{parent}/operations
+      operations:
+      - name: listoperations
+        method: GET
+        description: List operations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-serviceLbPolicies
+      path: /v1/{parent}/serviceLbPolicies
+      operations:
+      - name: listservicelbpolicies
+        method: GET
+        description: List service load balancing policies
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createservicelbpolicy
+        method: POST
+        description: Create a service load balancing policy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: serviceLbPolicyId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-tcpRoutes
+      path: /v1/{parent}/tcpRoutes
+      operations:
+      - name: listtcproutes
+        method: GET
+        description: List TCP routes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createtcproute
+        method: POST
+        description: Create a TCP route
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: tcpRouteId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-tlsRoutes
+      path: /v1/{parent}/tlsRoutes
+      operations:
+      - name: listtlsroutes
+        method: GET
+        description: List TLS routes
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createtlsroute
+        method: POST
+        description: Create a TLS route
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: tlsRouteId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    authentication:
+      type: bearer
+      token: '{{env.GOOGLE_CLOUD_SERVICE_MESH_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: google-cloud-service-mesh-rest
+    port: 8080
+    description: REST adapter for Google Cloud Network Services API (Service Mesh). One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/v1/{name}
+      name: v1-name
+      description: REST surface for v1-name.
+      operations:
+      - method: GET
+        name: getresource
+        description: Get a resource by name
+        call: google-cloud-service-mesh.getresource
+        with:
+          name: rest.name
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: DELETE
+        name: deleteresource
+        description: Delete a resource
+        call: google-cloud-service-mesh.deleteresource
+        with:
+          name: rest.name
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PATCH
+        name: updateresource
+        description: Update a resource
+        call: google-cloud-service-mesh.updateresource
+        with:
+          name: rest.name
+          updateMask: rest.updateMask
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/name-cancel
+      name: v1-name-cancel
+      description: REST surface for v1-name}:cancel.
+      operations:
+      - method: POST
+        name: canceloperation
+        description: Cancel a long-running operation
+        call: google-cloud-service-mesh.canceloperation
+        with:
+          name: rest.name
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/endpointpolicies
+      name: v1-parent-endpointpolicies
+      description: REST surface for v1-parent-endpointPolicies.
+      operations:
+      - method: GET
+        name: listendpointpolicies
+        description: List endpoint policies
+        call: google-cloud-service-mesh.listendpointpolicies
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createendpointpolicy
+        description: Create an endpoint policy
+        call: google-cloud-service-mesh.createendpointpolicy
+        with:
+          parent: rest.parent
+          endpointPolicyId: rest.endpointPolicyId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/gateways
+      name: v1-parent-gateways
+      description: REST surface for v1-parent-gateways.
+      operations:
+      - method: GET
+        name: listgateways
+        description: List gateways
+        call: google-cloud-service-mesh.listgateways
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: creategateway
+        description: Create a gateway
+        call: google-cloud-service-mesh.creategateway
+        with:
+          parent: rest.parent
+          gatewayId: rest.gatewayId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/grpcroutes
+      name: v1-parent-grpcroutes
+      description: REST surface for v1-parent-grpcRoutes.
+      operations:
+      - method: GET
+        name: listgrpcroutes
+        description: List gRPC routes
+        call: google-cloud-service-mesh.listgrpcroutes
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: creategrpcroute
+        description: Create a gRPC route
+        call: google-cloud-service-mesh.creategrpcroute
+        with:
+          parent: rest.parent
+          grpcRouteId: rest.grpcRouteId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/httproutes
+      name: v1-parent-httproutes
+      description: REST surface for v1-parent-httpRoutes.
+      operations:
+      - method: GET
+        name: listhttproutes
+        description: List HTTP routes
+        call: google-cloud-service-mesh.listhttproutes
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createhttproute
+        description: Create an HTTP route
+        call: google-cloud-service-mesh.createhttproute
+        with:
+          parent: rest.parent
+          httpRouteId: rest.httpRouteId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/locations
+      name: v1-parent-locations
+      description: REST surface for v1-parent-locations.
+      operations:
+      - method: GET
+        name: listlocations
+        description: List supported locations
+        call: google-cloud-service-mesh.listlocations
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/meshes
+      name: v1-parent-meshes
+      description: REST surface for v1-parent-meshes.
+      operations:
+      - method: GET
+        name: listmeshes
+        description: List meshes
+        call: google-cloud-service-mesh.listmeshes
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createmesh
+        description: Create a mesh
+        call: google-cloud-service-mesh.createmesh
+        with:
+          parent: rest.parent
+          meshId: rest.meshId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/operations
+      name: v1-parent-operations
+      description: REST surface for v1-parent-operations.
+      operations:
+      - method: GET
+        name: listoperations
+        description: List operations
+        call: google-cloud-service-mesh.listoperations
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/servicelbpolicies
+      name: v1-parent-servicelbpolicies
+      description: REST surface for v1-parent-serviceLbPolicies.
+      operations:
+      - method: GET
+        name: listservicelbpolicies
+        description: List service load balancing policies
+        call: google-cloud-service-mesh.listservicelbpolicies
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createservicelbpolicy
+        description: Create a service load balancing policy
+        call: google-cloud-service-mesh.createservicelbpolicy
+        with:
+          parent: rest.parent
+          serviceLbPolicyId: rest.serviceLbPolicyId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/tcproutes
+      name: v1-parent-tcproutes
+      description: REST surface for v1-parent-tcpRoutes.
+      operations:
+      - method: GET
+        name: listtcproutes
+        description: List TCP routes
+        call: google-cloud-service-mesh.listtcproutes
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createtcproute
+        description: Create a TCP route
+        call: google-cloud-service-mesh.createtcproute
+        with:
+          parent: rest.parent
+          tcpRouteId: rest.tcpRouteId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/tlsroutes
+      name: v1-parent-tlsroutes
+      description: REST surface for v1-parent-tlsRoutes.
+      operations:
+      - method: GET
+        name: listtlsroutes
+        description: List TLS routes
+        call: google-cloud-service-mesh.listtlsroutes
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createtlsroute
+        description: Create a TLS route
+        call: google-cloud-service-mesh.createtlsroute
+        with:
+          parent: rest.parent
+          tlsRouteId: rest.tlsRouteId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: google-cloud-service-mesh-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Google Cloud Network Services API (Service Mesh). One tool per consumed operation, routed
+      inline through this capability's consumes block.
+    tools:
+    - name: get-resource-name
+      description: Get a resource by name
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.getresource
+      with:
+        name: tools.name
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-resource
+      description: Delete a resource
+      hints:
+        readOnly: false
+        destructive: true
+        idempotent: true
+      call: google-cloud-service-mesh.deleteresource
+      with:
+        name: tools.name
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: update-resource
+      description: Update a resource
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.updateresource
+      with:
+        name: tools.name
+        updateMask: tools.updateMask
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: cancel-long-running-operation
+      description: Cancel a long-running operation
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.canceloperation
+      with:
+        name: tools.name
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-endpoint-policies
+      description: List endpoint policies
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listendpointpolicies
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-endpoint-policy
+      description: Create an endpoint policy
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createendpointpolicy
+      with:
+        parent: tools.parent
+        endpointPolicyId: tools.endpointPolicyId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-gateways
+      description: List gateways
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listgateways
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-gateway
+      description: Create a gateway
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.creategateway
+      with:
+        parent: tools.parent
+        gatewayId: tools.gatewayId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-grpc-routes
+      description: List gRPC routes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listgrpcroutes
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-grpc-route
+      description: Create a gRPC route
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.creategrpcroute
+      with:
+        parent: tools.parent
+        grpcRouteId: tools.grpcRouteId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-http-routes
+      description: List HTTP routes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listhttproutes
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-http-route
+      description: Create an HTTP route
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createhttproute
+      with:
+        parent: tools.parent
+        httpRouteId: tools.httpRouteId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-supported-locations
+      description: List supported locations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listlocations
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-meshes
+      description: List meshes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listmeshes
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-mesh
+      description: Create a mesh
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createmesh
+      with:
+        parent: tools.parent
+        meshId: tools.meshId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-operations
+      description: List operations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listoperations
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-service-load-balancing-policies
+      description: List service load balancing policies
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listservicelbpolicies
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-service-load-balancing-policy
+      description: Create a service load balancing policy
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createservicelbpolicy
+      with:
+        parent: tools.parent
+        serviceLbPolicyId: tools.serviceLbPolicyId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-tcp-routes
+      description: List TCP routes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listtcproutes
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-tcp-route
+      description: Create a TCP route
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createtcproute
+      with:
+        parent: tools.parent
+        tcpRouteId: tools.tcpRouteId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-tls-routes
+      description: List TLS routes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-cloud-service-mesh.listtlsroutes
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-tls-route
+      description: Create a TLS route
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-cloud-service-mesh.createtlsroute
+      with:
+        parent: tools.parent
+        tlsRouteId: tools.tlsRouteId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
