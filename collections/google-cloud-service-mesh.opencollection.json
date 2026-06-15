@@ -1,0 +1,503 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Cloud Network Services API (Service Mesh)",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get a resource by name",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a resource by name"
+    },
+    {
+      "info": {
+        "name": "Update a resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://networkservices.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "updateMask",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Update a resource"
+    },
+    {
+      "info": {
+        "name": "Delete a resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://networkservices.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a resource"
+    },
+    {
+      "info": {
+        "name": "List supported locations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/locations",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List supported locations"
+    },
+    {
+      "info": {
+        "name": "List endpoint policies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/endpointPolicies",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List endpoint policies"
+    },
+    {
+      "info": {
+        "name": "Create an endpoint policy",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/endpointPolicies",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "endpointPolicyId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create an endpoint policy"
+    },
+    {
+      "info": {
+        "name": "List gateways",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/gateways",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List gateways"
+    },
+    {
+      "info": {
+        "name": "Create a gateway",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/gateways",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "gatewayId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a gateway"
+    },
+    {
+      "info": {
+        "name": "List meshes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/meshes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List meshes"
+    },
+    {
+      "info": {
+        "name": "Create a mesh",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/meshes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "meshId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a mesh"
+    },
+    {
+      "info": {
+        "name": "List HTTP routes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/httpRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List HTTP routes"
+    },
+    {
+      "info": {
+        "name": "Create an HTTP route",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/httpRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "httpRouteId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create an HTTP route"
+    },
+    {
+      "info": {
+        "name": "List gRPC routes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/grpcRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List gRPC routes"
+    },
+    {
+      "info": {
+        "name": "Create a gRPC route",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/grpcRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "grpcRouteId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a gRPC route"
+    },
+    {
+      "info": {
+        "name": "List TCP routes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/tcpRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List TCP routes"
+    },
+    {
+      "info": {
+        "name": "Create a TCP route",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/tcpRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "tcpRouteId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a TCP route"
+    },
+    {
+      "info": {
+        "name": "List TLS routes",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/tlsRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List TLS routes"
+    },
+    {
+      "info": {
+        "name": "Create a TLS route",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/tlsRoutes",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "tlsRouteId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a TLS route"
+    },
+    {
+      "info": {
+        "name": "List service load balancing policies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/serviceLbPolicies",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List service load balancing policies"
+    },
+    {
+      "info": {
+        "name": "Create a service load balancing policy",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:parent/serviceLbPolicies",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "serviceLbPolicyId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a service load balancing policy"
+    },
+    {
+      "info": {
+        "name": "List operations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://networkservices.googleapis.com/v1/:parent/operations",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List operations"
+    },
+    {
+      "info": {
+        "name": "Cancel a long-running operation",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://networkservices.googleapis.com/v1/:name:cancel",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Cancel a long-running operation"
+    }
+  ],
+  "bundled": true
+}
