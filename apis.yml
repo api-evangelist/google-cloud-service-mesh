@@ -5,7 +5,7 @@ description: >-
   enabling secure, observable, and reliable communication between microservices. It provides a managed Istio control
   plane, Google Cloud-native service routing APIs, mTLS security, and built-in telemetry for distributed applications.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Google Cloud
   - Istio
