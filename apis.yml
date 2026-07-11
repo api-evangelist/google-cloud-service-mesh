@@ -80,6 +80,12 @@ apis:
       - type: Documentation
         url: https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis
 common:
+  - type: VulnerabilityDisclosure
+    url: security/google-cloud-service-mesh-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/google-cloud-service-mesh-domain-security.yml
+  - type: Authentication
+    url: authentication/google-cloud-service-mesh-authentication.yml
   - type: OAuthScopes
     url: scopes/google-cloud-service-mesh-scopes.yml
   - type: GitHubOrganization
