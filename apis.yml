@@ -80,6 +80,8 @@ apis:
       - type: Documentation
         url: https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis
 common:
+  - type: OAuthScopes
+    url: scopes/google-cloud-service-mesh-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/GoogleCloudPlatform
   - type: Website
@@ -100,6 +102,8 @@ common:
     url: https://cloud.google.com/service-mesh/docs/security-bulletins
   - type: Integrations
     url: https://cloud.google.com/marketplace
+  - url: https://cloud.google.com/feeds/service-mesh-release-notes.xml
+    type: Blog
 integrations:
   - name: Become a Partner
 maintainers:

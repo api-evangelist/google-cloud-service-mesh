@@ -1,0 +1,17 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/google-cloud-service-mesh-openapi.yml
+schemes:
+- name: oauth2
+  source: openapi/google-cloud-service-mesh-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://accounts.google.com/o/oauth2/auth
+    tokenUrl: https://oauth2.googleapis.com/token
+scopes:
+- scope: https://www.googleapis.com/auth/cloud-platform
+  description: View and manage Google Cloud data
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/google-cloud-service-mesh-openapi.yml
