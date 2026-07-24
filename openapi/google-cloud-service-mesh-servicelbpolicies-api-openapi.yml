@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: Google Cloud Network Services API (Service Mesh) EndpointPolicies ServiceLbPolicies API
+  description: REST API for Google Cloud Service Mesh, providing programmatic configuration of application networking (gateways, meshes, routes, endpoint policies, service load balancing policies).
+  version: v1
+servers:
+- url: https://networkservices.googleapis.com
+security:
+- oauth2:
+  - https://www.googleapis.com/auth/cloud-platform
+tags:
+- name: ServiceLbPolicies
+paths:
+  /v1/{parent}/serviceLbPolicies:
+    get:
+      summary: List service load balancing policies
+      operationId: listServiceLbPolicies
+      parameters:
+      - name: parent
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Service LB policies response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - ServiceLbPolicies
+    post:
+      summary: Create a service load balancing policy
+      operationId: createServiceLbPolicy
+      parameters:
+      - name: parent
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: serviceLbPolicyId
+        in: query
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - ServiceLbPolicies
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
+x-generated-from: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
+x-generated-by: claude-crawl-2026-05-08
