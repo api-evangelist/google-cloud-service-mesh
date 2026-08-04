@@ -1,0 +1,34 @@
+{
+  "provider": "google-cloud-service-mesh",
+  "sources": [
+    "google-cloud-service-mesh-endpointpolicies-api-openapi.yml",
+    "google-cloud-service-mesh-gateways-api-openapi.yml",
+    "google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api-openapi.yml",
+    "google-cloud-service-mesh-grpcroutes-api-openapi.yml",
+    "google-cloud-service-mesh-httproutes-api-openapi.yml",
+    "google-cloud-service-mesh-locations-api-openapi.yml",
+    "google-cloud-service-mesh-meshes-api-openapi.yml",
+    "google-cloud-service-mesh-operations-api-openapi.yml",
+    "google-cloud-service-mesh-servicelbpolicies-api-openapi.yml",
+    "google-cloud-service-mesh-tcproutes-api-openapi.yml",
+    "google-cloud-service-mesh-tlsroutes-api-openapi.yml"
+  ],
+  "outputs": [
+    "google-cloud-service-mesh-endpointpolicies-api-openapi.yml",
+    "google-cloud-service-mesh-gateways-api-openapi.yml",
+    "google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api-openapi.yml",
+    "google-cloud-service-mesh-grpcroutes-api-openapi.yml",
+    "google-cloud-service-mesh-httproutes-api-openapi.yml",
+    "google-cloud-service-mesh-locations-api-openapi.yml",
+    "google-cloud-service-mesh-meshes-api-openapi.yml",
+    "google-cloud-service-mesh-operations-api-openapi.yml",
+    "google-cloud-service-mesh-servicelbpolicies-api-openapi.yml",
+    "google-cloud-service-mesh-tcproutes-api-openapi.yml",
+    "google-cloud-service-mesh-tlsroutes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

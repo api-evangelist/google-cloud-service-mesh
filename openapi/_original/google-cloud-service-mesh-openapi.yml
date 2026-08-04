@@ -1,0 +1,476 @@
+openapi: 3.1.0
+info:
+  title: Google Cloud Network Services API (Service Mesh)
+  description: >-
+    REST API for Google Cloud Service Mesh, providing programmatic
+    configuration of application networking (gateways, meshes, routes,
+    endpoint policies, service load balancing policies).
+  version: "v1"
+x-generated-from: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
+x-generated-by: claude-crawl-2026-05-08
+servers:
+  - url: https://networkservices.googleapis.com
+paths:
+  /v1/{name}:
+    get:
+      summary: Get a resource by name
+      operationId: getResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Resource response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: Delete a resource
+      operationId: deleteResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+    patch:
+      summary: Update a resource
+      operationId: updateResource
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: updateMask
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/locations:
+    get:
+      summary: List supported locations
+      operationId: listLocations
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Locations response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/endpointPolicies:
+    get:
+      summary: List endpoint policies
+      operationId: listEndpointPolicies
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Endpoint policies response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create an endpoint policy
+      operationId: createEndpointPolicy
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: endpointPolicyId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/gateways:
+    get:
+      summary: List gateways
+      operationId: listGateways
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Gateways response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a gateway
+      operationId: createGateway
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: gatewayId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/meshes:
+    get:
+      summary: List meshes
+      operationId: listMeshes
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Meshes response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a mesh
+      operationId: createMesh
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: meshId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/httpRoutes:
+    get:
+      summary: List HTTP routes
+      operationId: listHttpRoutes
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: HTTP routes response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create an HTTP route
+      operationId: createHttpRoute
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: httpRouteId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/grpcRoutes:
+    get:
+      summary: List gRPC routes
+      operationId: listGrpcRoutes
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: gRPC routes response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a gRPC route
+      operationId: createGrpcRoute
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: grpcRouteId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/tcpRoutes:
+    get:
+      summary: List TCP routes
+      operationId: listTcpRoutes
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: TCP routes response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a TCP route
+      operationId: createTcpRoute
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: tcpRouteId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/tlsRoutes:
+    get:
+      summary: List TLS routes
+      operationId: listTlsRoutes
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: TLS routes response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a TLS route
+      operationId: createTlsRoute
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: tlsRouteId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/serviceLbPolicies:
+    get:
+      summary: List service load balancing policies
+      operationId: listServiceLbPolicies
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Service LB policies response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      summary: Create a service load balancing policy
+      operationId: createServiceLbPolicy
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: serviceLbPolicyId
+          in: query
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Operation response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{parent}/operations:
+    get:
+      summary: List operations
+      operationId: listOperations
+      parameters:
+        - name: parent
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operations response
+          content:
+            application/json:
+              schema:
+                type: object
+  /v1/{name}:cancel:
+    post:
+      summary: Cancel a long-running operation
+      operationId: cancelOperation
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Cancel response
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
+security:
+  - oauth2:
+      - https://www.googleapis.com/auth/cloud-platform
