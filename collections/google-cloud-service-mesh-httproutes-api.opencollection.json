@@ -1,0 +1,75 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Cloud Network Services API (Service Mesh) EndpointPolicies HttpRoutes API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "HttpRoutes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List HTTP routes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://networkservices.googleapis.com/v1/:parent/httpRoutes",
+            "params": [
+              {
+                "name": "parent",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List HTTP routes"
+        },
+        {
+          "info": {
+            "name": "Create an HTTP route",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://networkservices.googleapis.com/v1/:parent/httpRoutes",
+            "params": [
+              {
+                "name": "parent",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "httpRouteId",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create an HTTP route"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

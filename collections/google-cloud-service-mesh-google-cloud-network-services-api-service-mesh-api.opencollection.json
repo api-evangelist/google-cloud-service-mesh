@@ -1,0 +1,115 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Cloud Network Services API (Service Mesh) EndpointPolicies Google Cloud Network Services API (Service Mesh) API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Google Cloud Network Services API (Service Mesh)",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a resource by name",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://networkservices.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a resource by name"
+        },
+        {
+          "info": {
+            "name": "Update a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://networkservices.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "updateMask",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a resource"
+        },
+        {
+          "info": {
+            "name": "Delete a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://networkservices.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a resource"
+        },
+        {
+          "info": {
+            "name": "Cancel a long-running operation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://networkservices.googleapis.com/v1/:name:cancel",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Cancel a long-running operation"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
