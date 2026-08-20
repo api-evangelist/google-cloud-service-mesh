@@ -77,6 +77,8 @@ apis:
   humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   baseURL: https://networkservices.googleapis.com/
   tags:
+  - Endpoint Policies
+  tags_raw:
   - EndpointPolicies
   properties:
   - type: OpenAPI
@@ -113,7 +115,8 @@ apis:
     for google cloud network services api (service mesh).
   humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   baseURL: https://networkservices.googleapis.com/
-  tags:
+  tags: []
+  tags_raw:
   - Google Cloud Network Services API (Service Mesh)
   properties:
   - type: OpenAPI
@@ -199,7 +202,8 @@ apis:
   description: The Operations API from Google Cloud Service Mesh — 1 operation(s) for operations.
   humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   baseURL: https://networkservices.googleapis.com/
-  tags:
+  tags: []
+  tags_raw:
   - Operations
   properties:
   - type: OpenAPI
