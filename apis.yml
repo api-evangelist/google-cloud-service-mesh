@@ -89,7 +89,7 @@ apis:
   humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   baseURL: https://networkservices.googleapis.com/
   tags:
-  - EndpointPolicies
+  - Endpoint Policies
   tags_raw:
   - EndpointPolicies
   properties:
