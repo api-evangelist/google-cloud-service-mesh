@@ -82,26 +82,6 @@ apis:
   properties:
   - type: Documentation
     url: https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis
-- aid: google-cloud-service-mesh:google-cloud-service-mesh-endpointpolicies-api
-  name: Google Cloud Service Mesh EndpointPolicies API
-  description: >-
-    The EndpointPolicies API from Google Cloud Service Mesh — 1 operation(s) for endpointpolicies.
-  humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
-  baseURL: https://networkservices.googleapis.com/
-  tags:
-  - Endpoint Policies
-  tags_raw:
-  - EndpointPolicies
-  properties:
-  - type: OpenAPI
-    url: openapi/google-cloud-service-mesh-endpointpolicies-api-openapi.yml
-  - type: Documentation
-    url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
-  - type: Reference
-    url: >-
-      https://cloud.google.com/service-mesh/docs/reference/network-services/rest/v1/projects.locations.meshes
-  - type: Discovery
-    url: https://networkservices.googleapis.com/$discovery/rest?version=v1
 - aid: google-cloud-service-mesh:google-cloud-service-mesh-gateways-api
   name: Google Cloud Service Mesh Gateways API
   description: The Gateways API from Google Cloud Service Mesh — 1 operation(s) for gateways.
@@ -272,6 +252,24 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/google-cloud-service-mesh-tlsroutes-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
+  - type: Reference
+    url: >-
+      https://cloud.google.com/service-mesh/docs/reference/network-services/rest/v1/projects.locations.meshes
+  - type: Discovery
+    url: https://networkservices.googleapis.com/$discovery/rest?version=v1
+- aid: google-cloud-service-mesh:google-cloud-service-mesh-endpoint-policies-api
+  name: Google Cloud Service Mesh Endpoint Policies API
+  description: >-
+    The Endpoint Policies API from Google Cloud Service Mesh — 1 operation(s) for endpoint policies.
+  humanURL: https://cloud.google.com/service-mesh/docs/reference/network-security/rest
+  baseURL: https://networksecurity.googleapis.com/
+  tags:
+  - Endpoint Policies
+  properties:
+  - type: OpenAPI
+    url: openapi/google-cloud-service-mesh-endpoint-policies-api-openapi.yml
   - type: Documentation
     url: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   - type: Reference
