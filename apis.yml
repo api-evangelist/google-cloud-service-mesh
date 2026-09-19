@@ -161,6 +161,8 @@ apis:
   humanURL: https://cloud.google.com/service-mesh/docs/reference/network-services/rest
   baseURL: https://networkservices.googleapis.com/
   tags:
+  - Location
+  tags_raw:
   - Locations
   properties:
   - type: OpenAPI
