@@ -1,17 +1,7 @@
 {
   "provider": "google-cloud-service-mesh",
   "sources": [
-    "google-cloud-service-mesh-endpointpolicies-api-openapi.yml",
-    "google-cloud-service-mesh-gateways-api-openapi.yml",
-    "google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api-openapi.yml",
-    "google-cloud-service-mesh-grpcroutes-api-openapi.yml",
-    "google-cloud-service-mesh-httproutes-api-openapi.yml",
-    "google-cloud-service-mesh-locations-api-openapi.yml",
-    "google-cloud-service-mesh-meshes-api-openapi.yml",
-    "google-cloud-service-mesh-operations-api-openapi.yml",
-    "google-cloud-service-mesh-servicelbpolicies-api-openapi.yml",
-    "google-cloud-service-mesh-tcproutes-api-openapi.yml",
-    "google-cloud-service-mesh-tlsroutes-api-openapi.yml"
+    "_ae-authored/google-cloud-service-mesh-openapi.yml"
   ],
   "outputs": [
     "google-cloud-service-mesh-endpointpolicies-api-openapi.yml",
@@ -26,9 +16,61 @@
     "google-cloud-service-mesh-tcproutes-api-openapi.yml",
     "google-cloud-service-mesh-tlsroutes-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "google-cloud-service-mesh-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{name} -> Google Cloud Network Services API (Service Mesh)",
+    "google-cloud-service-mesh-openapi.yml: tagged paths DELETE /v1/{name} -> Google Cloud Network Services API (Service Mesh)",
+    "google-cloud-service-mesh-openapi.yml: tagged paths PATCH /v1/{name} -> Google Cloud Network Services API (Service Mesh)",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/locations -> Locations",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/endpointPolicies -> EndpointPolicies",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/endpointPolicies -> EndpointPolicies",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/gateways -> Gateways",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/gateways -> Gateways",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/meshes -> Meshes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/meshes -> Meshes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/httpRoutes -> HttpRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/httpRoutes -> HttpRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/grpcRoutes -> GrpcRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/grpcRoutes -> GrpcRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/tcpRoutes -> TcpRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/tcpRoutes -> TcpRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/tlsRoutes -> TlsRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/tlsRoutes -> TlsRoutes",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/serviceLbPolicies -> ServiceLbPolicies",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{parent}/serviceLbPolicies -> ServiceLbPolicies",
+    "google-cloud-service-mesh-openapi.yml: tagged paths GET /v1/{parent}/operations -> Operations",
+    "google-cloud-service-mesh-openapi.yml: tagged paths POST /v1/{name}:cancel -> Google Cloud Network Services API (Service Mesh)",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: EndpointPolicies",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: Gateways",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: Google Cloud Network Services API (Service Mesh)",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: GrpcRoutes",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: HttpRoutes",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: Locations",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: Meshes",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: Operations",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: ServiceLbPolicies",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: TcpRoutes",
+    "google-cloud-service-mesh-openapi.yml: declared missing tag: TlsRoutes",
+    "superseded outputs removed: google-cloud-service-mesh-endpoint-policies-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 13 total)"
+  ],
+  "skipped": [
+    "google-cloud-service-mesh-endpoint-policies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-gateways-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-grpcroutes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-httproutes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-locations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-meshes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-operations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-servicelbpolicies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-tcproutes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-cloud-service-mesh-tlsroutes-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
