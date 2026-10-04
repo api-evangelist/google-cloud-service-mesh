@@ -280,6 +280,9 @@ apis:
   - type: Discovery
     url: https://networkservices.googleapis.com/$discovery/rest?version=v1
 common:
+  - type: CapabilityMap
+    url: capabilities/google-cloud-service-mesh-capability-edges.yml
+    name: Google Cloud Service Mesh Business Capability Map
   - type: AgenticAccess
     url: agentic-access/google-cloud-service-mesh-agentic-access.yml
   - type: VulnerabilityDisclosure

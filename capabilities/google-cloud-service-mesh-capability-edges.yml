@@ -1,0 +1,86 @@
+slug: google-cloud-service-mesh
+provider: Google Cloud Service Mesh
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 8
+edges:
+- tag: Endpoint Policies
+  spec_file: google-cloud-service-mesh-endpoint-policies-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"Create an endpoint policy" under "programmatic configuration of application networking (gateways,
+    meshes, routes, endpoint policies, service load balancing policies)"'
+  reason: Configuration of service-mesh application networking policy is cloud network infrastructure
+    management, not a business-domain capability.
+- tag: Gateways
+  spec_file: google-cloud-service-mesh-gateways-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"createGateway  Create a gateway" in an API for "programmatic configuration of application
+    networking (gateways, meshes, routes...)"'
+  reason: Gateway provisioning for service mesh traffic ingress is network/cloud infrastructure management.
+- tag: GrpcRoutes
+  spec_file: google-cloud-service-mesh-grpcroutes-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"createGrpcRoute  Create a gRPC route"'
+  reason: Traffic routing configuration for microservice networking is cloud network infrastructure management.
+- tag: HttpRoutes
+  spec_file: google-cloud-service-mesh-httproutes-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"createHttpRoute  Create an HTTP route"'
+  reason: HTTP route configuration in the service mesh is network infrastructure configuration, not a
+    business capability.
+- tag: Meshes
+  spec_file: google-cloud-service-mesh-meshes-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"createMesh  Create a mesh" in the "Google Cloud Network Services API (Service Mesh)"'
+  reason: Provisioning of service mesh resources for microservice communication is cloud/network infrastructure
+    management.
+- tag: TcpRoutes
+  spec_file: google-cloud-service-mesh-tcproutes-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: '"createTcpRoute  Create a TCP route"'
+  reason: TCP routing configuration for the mesh is cloud network infrastructure management.
+- tag: ServiceLbPolicies
+  spec_file: google-cloud-service-mesh-servicelbpolicies-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.72
+  evidence: '"createServiceLbPolicy  Create a service load balancing policy"'
+  reason: Load balancing policy configuration is network infrastructure management; it borders on capacity/performance
+    but the surface is pure infrastructure config.
+- tag: TlsRoutes
+  spec_file: google-cloud-service-mesh-tlsroutes-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.72
+  evidence: '"createTlsRoute  Create a TLS route"'
+  reason: TLS route configuration is network traffic infrastructure configuration; mTLS security context
+    is incidental to the routing resource.
