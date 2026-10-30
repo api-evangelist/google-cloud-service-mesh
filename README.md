@@ -1,4 +1,4 @@
-# Google Cloud Service Mesh (google-cloud-service-mesh)
+# Google Cloud Service Mesh
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,106 +66,150 @@
 
 Google Cloud Service Mesh is Google's managed service mesh solution for GKE and supported GKE Enterprise environments, enabling secure, observable, and reliable communication between microservices. It provides a managed Istio control plane, Google Cloud-native service routing APIs, mTLS security, and built-in telemetry for distributed applications.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/google-cloud-service-mesh/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/google-cloud-service-mesh/refs/heads/main/apis.yml)
+**Areas:** Google Cloud · Istio · Kubernetes · Microservices · Service Mesh
 
-## Scope
+## Google Cloud Service Mesh on APIs.io
 
-- **Type:** Index
+Everything profiled for Google Cloud Service Mesh is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/google-cloud-service-mesh/](https://apis.io/providers/google-cloud-service-mesh/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (13)
 
-- Google Cloud
-- Istio
-- Kubernetes
-- Microservices
-- Service Mesh
+- [Google Cloud Network Security API](https://apis.io/apis/google-cloud-service-mesh/network-security-api/) — The Network Security API manages security policies for Cloud Service Mesh, including authorization policies, client TLS policies, and server TLS policies.…
+- [Google Cloud Service Mesh xDS Control Plane API](https://apis.io/apis/google-cloud-service-mesh/xds-control-plane-api/) — Cloud Service Mesh uses the open-source xDS v3 control plane API to distribute configuration to Envoy sidecar proxies and proxyless gRPC clients.…
+- [Google Cloud Service Mesh Gateways API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-gateways-api/) — The Gateways API from Google Cloud Service Mesh — 1 operation(s) for gateways.
+- [Google Cloud Service Mesh Google Cloud Network Services API (Service Mesh) API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api/) — The Google Cloud Network Services API (Service Mesh) API from Google Cloud Service Mesh — 2 operation(s) for google cloud network services api (service mesh).
+- [Google Cloud Service Mesh GrpcRoutes API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-grpcroutes-api/) — The GrpcRoutes API from Google Cloud Service Mesh — 1 operation(s) for grpcroutes.
+- [Google Cloud Service Mesh HttpRoutes API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-httproutes-api/) — The HttpRoutes API from Google Cloud Service Mesh — 1 operation(s) for httproutes.
+- [Google Cloud Service Mesh Locations API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-locations-api/) — The Locations API from Google Cloud Service Mesh — 1 operation(s) for locations.
+- [Google Cloud Service Mesh Meshes API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-meshes-api/) — The Meshes API from Google Cloud Service Mesh — 1 operation(s) for meshes.
+- [Google Cloud Service Mesh Operations API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-operations-api/) — The Operations API from Google Cloud Service Mesh — 1 operation(s) for operations.
+- [Google Cloud Service Mesh ServiceLbPolicies API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-servicelbpolicies-api/) — The ServiceLbPolicies API from Google Cloud Service Mesh — 1 operation(s) for servicelbpolicies.
+- [Google Cloud Service Mesh TcpRoutes API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-tcproutes-api/) — The TcpRoutes API from Google Cloud Service Mesh — 1 operation(s) for tcproutes.
+- [Google Cloud Service Mesh TlsRoutes API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-tlsroutes-api/) — The TlsRoutes API from Google Cloud Service Mesh — 1 operation(s) for tlsroutes.
+- [Google Cloud Service Mesh Endpoint Policies API](https://apis.io/apis/google-cloud-service-mesh/google-cloud-service-mesh-endpoint-policies-api/) — The Endpoint Policies API from Google Cloud Service Mesh — 1 operation(s) for endpoint policies.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Google Cloud Network Services API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Network Services API provides programmatic configuration of application networking infrastructure for Cloud Service Mesh. It manages gateways, meshes, HTTP/gRPC/TCP/TLS routes, endpoint policies, service load balancing policies, WebAssembly plugins, and authorization extensions through a REST interface backed by the networkservices.googleapis.com service endpoint.
+- [Google Cloud Service Mesh Agentic Access](https://apis.io/agentic-access/google-cloud-service-mesh/google-cloud-service-mesh-agentic-access/)
 
-- **Human URL:** [https://cloud.google.com/service-mesh/docs/reference/network-services/rest](https://cloud.google.com/service-mesh/docs/reference/network-services/rest)
-- **Base URL:** `https://networkservices.googleapis.com/`
+#### Collections (12)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Networking
-- REST
-- Service Mesh
-- Traffic Management
+- [Google Cloud Network Services API (Service Mesh)](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-endpointpolicies-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies Gateways API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-gateways-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies Google Cloud Network Services API (Service Mesh) API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-google-cloud-network-services-api-service-mesh-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies GrpcRoutes API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-grpcroutes-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies HttpRoutes API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-httproutes-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies Locations API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-locations-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies Meshes API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-meshes-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies Operations API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-operations-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies ServiceLbPolicies API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-servicelbpolicies-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies TcpRoutes API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-tcproutes-api/)
+- [Google Cloud Network Services API (Service Mesh) EndpointPolicies TlsRoutes API](https://apis.io/collections/google-cloud-service-mesh/open-google-cloud-service-mesh-tlsroutes-api/)
 
-#### Properties
+#### Security (3)
 
-- [OpenAPI](openapi/google-cloud-service-mesh-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/google-cloud-service-mesh.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-cloud-service-mesh.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://cloud.google.com/service-mesh/docs/reference/network-services/rest)
-- [Reference](https://cloud.google.com/service-mesh/docs/reference/network-services/rest/v1/projects.locations.meshes)
-- [Discovery](https://networkservices.googleapis.com/$discovery/rest?version=v1)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Google Cloud Network Security API
+- [Google Cloud Service Mesh Authentication](https://apis.io/security/google-cloud-service-mesh/google-cloud-service-mesh-authentication/)
+- [Google Cloud Service Mesh Domain Security](https://apis.io/security/google-cloud-service-mesh/google-cloud-service-mesh-domain-security/)
+- [Google Cloud Service Mesh Vulnerability Disclosure](https://apis.io/security/google-cloud-service-mesh/google-cloud-service-mesh-vulnerability-disclosure/)
 
-The Network Security API manages security policies for Cloud Service Mesh, including authorization policies, client TLS policies, and server TLS policies. It provides REST endpoints for creating and managing mTLS configuration and fine-grained access control across projects and locations, served from the networksecurity.googleapis.com service endpoint.
+#### OAuth scopes (1)
 
-- **Human URL:** [https://cloud.google.com/service-mesh/docs/reference/network-security/rest](https://cloud.google.com/service-mesh/docs/reference/network-security/rest)
-- **Base URL:** `https://networksecurity.googleapis.com/`
+The permissions the API asks for.
 
-#### Tags
+- [Google Cloud Service Mesh Scopes](https://apis.io/scopes/google-cloud-service-mesh/google-cloud-service-mesh-scopes/)
 
-- Authorization
-- mTLS
-- Security
-- Service Mesh
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://cloud.google.com/service-mesh/docs/reference/network-security/rest)
-- [Reference](https://cloud.google.com/service-mesh/docs/reference/network-security/rest/v1/projects.locations.authorizationPolicies)
-- [Discovery](https://networksecurity.googleapis.com/$discovery/rest?version=v1)
-- [Postman Collection](collections/google-cloud-service-mesh.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-cloud-service-mesh.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Google Cloud Service Mesh Plans Pricing](https://apis.io/plans/google-cloud-service-mesh/google-cloud-service-mesh-plans-pricing/)
 
-### Google Cloud Service Mesh xDS Control Plane API
+#### Rate limits (1)
 
-Cloud Service Mesh uses the open-source xDS v3 control plane API to distribute configuration to Envoy sidecar proxies and proxyless gRPC clients. Configurations defined via the Network Services and Network Security REST APIs are translated and pushed to connected clients through the xDS protocol, supporting Listener Discovery Service (LDS), Route Discovery Service (RDS), Cluster Discovery Service (CDS), and Endpoint Discovery Service (EDS).
+Published request limits.
 
-- **Human URL:** [https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis](https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis)
-- **Base URL:** `https://trafficdirector.googleapis.com/`
+- [Google Cloud Service Mesh Rate Limits](https://apis.io/rate-limits/google-cloud-service-mesh/google-cloud-service-mesh-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Control Plane
-- Envoy
-- Service Mesh
-- xDS
+What the API costs to run, by operation.
 
-#### Properties
+- [Google Cloud Service Mesh Finops](https://apis.io/finops/google-cloud-service-mesh/google-cloud-service-mesh-finops/)
 
-- [Documentation](https://cloud.google.com/service-mesh/docs/service-routing/xds-control-plane-apis)
-- [Postman Collection](collections/google-cloud-service-mesh.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-cloud-service-mesh.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [GitHub Organization](https://github.com/GoogleCloudPlatform)
 - [Website](https://cloud.google.com/service-mesh)
 - [Documentation](https://cloud.google.com/service-mesh/docs)
-- [Getting Started](https://cloud.google.com/service-mesh/docs/onboarding/provision-control-plane)
-- [Reference](https://cloud.google.com/service-mesh/docs/reference/network-services/rest)
+- [Getting started](https://cloud.google.com/service-mesh/docs/onboarding/provision-control-plane)
 - [Pricing](https://cloud.google.com/service-mesh/pricing)
-- [Changelog](https://cloud.google.com/service-mesh/docs/release-notes)
 - [Support](https://cloud.google.com/service-mesh/docs/getting-support)
+- [Changelog](https://cloud.google.com/service-mesh/docs/release-notes)
+- [Blog](https://cloud.google.com/feeds/service-mesh-release-notes.xml)
 - [Security](https://cloud.google.com/service-mesh/docs/security-bulletins)
-- [Integrations](https://cloud.google.com/marketplace)
+- [GitHub](https://github.com/GoogleCloudPlatform)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 37.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 42.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 24.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/google-cloud-service-mesh/](https://apis.io/providers/google-cloud-service-mesh/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Google Cloud Service Mesh: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/google-cloud-service-mesh/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
